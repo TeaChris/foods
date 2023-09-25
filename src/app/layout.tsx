@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('antialiased light')}>
       <body
-        className={`text-[1rem] font-bold text-neutral-950 w-screen bg-neutral-200 ${comfort.className}`}
+        className={`text-[1rem] font-bold text-neutral-950 w-screen bg-white overflow-x-hidden ${comfort.className}`}
       >
         <Navbar />
         <div className="w-full h-full pt-12">{children}</div>

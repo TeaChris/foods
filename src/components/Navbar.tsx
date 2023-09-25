@@ -10,8 +10,8 @@ interface NavbarProps {}
 
 export const Navbar: FC<NavbarProps> = ({}) => {
   return (
-    <nav className="w-full h-20 grid place-items-center font-bold">
-      <div className="container mx-auto flex justify-between items-center h-full">
+    <nav className="w-full h-40 grid place-items-center font-bold">
+      <div className="w-lg mx-auto flex justify-between items-center h-full">
         {/* logo and links */}
         <div className="w-fit items-center h-full flex gap-16">
           {/* logo */}
@@ -19,8 +19,8 @@ export const Navbar: FC<NavbarProps> = ({}) => {
             <CustomImage
               src="/icons/logo.svg"
               alt="logo"
-              height={25}
-              width={25}
+              height={23}
+              width={23}
               priority={true}
               size=""
             />
@@ -44,6 +44,7 @@ export const Navbar: FC<NavbarProps> = ({}) => {
             type="search"
             disabled
             placeholder="Enter item of restaurant you are looking for"
+            className="w-[20rem]"
           />
           <Link
             href="/cart"
@@ -58,7 +59,7 @@ export const Navbar: FC<NavbarProps> = ({}) => {
               size=""
             />
           </Link>
-          <Link href="/sign-in" className="w-40">
+          <Link href="/sign-in" className="w-24 h-12">
             <Button size="default" className="w-full hover:bg-orange-500">
               sign-in
             </Button>

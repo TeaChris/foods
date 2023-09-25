@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '4rem',
+      padding: '3rem',
       screens: {
         '2xl': '1400px',
       },
@@ -69,6 +69,10 @@ module.exports = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      width: {
+        lg: '79%',
+        md: '90%',
       },
     },
   },

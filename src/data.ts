@@ -19,6 +19,6 @@ type Footer = {
 export const footer: Footer = [
   { id: 1, name: 'about', href: '/' },
   { id: 2, name: 'delivery', href: '/' },
-  { id: 2, name: 'help & support', href: '/' },
-  { id: 2, name: 'T&C', href: '/' },
+  { id: 3, name: 'help & support', href: '/' },
+  { id: 4, name: 'T&C', href: '/' },
 ]
