@@ -1,6 +1,7 @@
 import { Footer } from '@/components/Footer'
 import { Navbar } from '@/components/Navbar'
 import { cn } from '@/lib/utils'
+import { NextUI } from '@/providers/NextUI'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
@@ -25,9 +26,11 @@ export default function RootLayout({
       <body
         className={`text-[1rem] font-bold text-neutral-950 w-screen bg-white overflow-x-hidden ${comfort.className}`}
       >
-        <Navbar />
-        <div className="w-full h-full pt-12">{children}</div>
-        <Footer />
+        <NextUI>
+          <Navbar />
+          <div className="w-full h-full pt-12">{children}</div>
+          <Footer />
+        </NextUI>
       </body>
     </html>
   )

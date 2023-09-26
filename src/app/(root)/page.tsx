@@ -1,3 +1,7 @@
+import { FeaturedPost } from '@/components/FeaturedPost'
+import { HomeSearch } from '@/components/HomeSearch'
+import { Mind } from '@/components/Mind'
+import { Recommendation } from '@/components/Recommendation'
 import { Slider } from '@/components/Slider'
 import { Animation } from '@/components/ui/Animation'
 import { CustomImage } from '@/components/ui/Image'
@@ -6,7 +10,7 @@ import { Input } from '@/components/ui/input'
 
 export default function Home() {
   return (
-    <main className="w-full flex fle-col h-fit pt-20 items-start">
+    <main className="w-full flex flex-col h-fit pt-20 items-start">
       <header className="w-full lg:h-[640px] relative">
         <div className="w-lg mx-auto h-ful flex items-start justify-between">
           {/* left */}
@@ -99,6 +103,10 @@ export default function Home() {
         <div className="w-[40rem] h-40 rounded-[5rem] bg-orange-500 opacity-30 top-24 -left-72 -rotate-45 absolute" />
         <div className="w-[50rem] h-40 rounded-[5rem] bg-transparent border-[5px] border-orange-500 opacity-30 top-36 -right-60 -rotate-45 -z-20 absolute" />
       </header>
+      <FeaturedPost />
+      <HomeSearch />
+      <Mind />
+      <Recommendation />
     </main>
   )
 }
