@@ -5,6 +5,7 @@ import { nav } from '@/data'
 import { Input } from './ui/input'
 import { Button, buttonVariants } from './ui/button'
 import { cn } from '@/lib/utils'
+import { CartIcon } from './CartIcon'
 
 interface NavbarProps {}
 
@@ -50,14 +51,7 @@ export const Navbar: FC<NavbarProps> = ({}) => {
             href="/cart"
             className={cn(buttonVariants({ variant: 'ghost' }))}
           >
-            <CustomImage
-              src="/icons/bag.svg"
-              alt="cart icon"
-              height={35}
-              width={35}
-              priority={true}
-              size=""
-            />
+            <CartIcon />
           </Link>
           <Link href="/sign-in" className="w-24 h-12">
             <Button size="default" className="w-full hover:bg-orange-500">
